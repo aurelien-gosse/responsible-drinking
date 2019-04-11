@@ -1,0 +1,149 @@
+html,body{
+  height: 100%;
+}
+
+p{
+  font-family: $fontTexte;
+  color: rgba(0,0,0,.6);
+}
+a{
+  font-family: Helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bt{
+  display: inline-block;
+  padding: 13px 26px;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s all ease-in-out;
+  &.bt-white{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    &:hover{
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+  &.bt-black{
+    border: 2px solid #000000;
+    color: #000000;
+    &:hover{
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.section-key{
+  padding: 50px 125px;
+  h2{
+    font-family: $fontTitre;
+    font-size: 50px;
+    text-align: center;
+  }
+  .section-key-articles{
+    border-top: 1px solid #D9D9D9;
+    padding-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .section-key-article{
+      width: calc((100% / 3) - 20px);
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+      h3{
+        font-family: $fontTitre;
+        font-size: 20px;
+      }
+      p{
+        font-family: $fontTexte;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .bt{
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+.section-tips, .section-about{
+  position: relative;
+  padding: 200px;
+  text-align: center;
+  .tips-txt, .about-txt{
+    position: relative;
+    h2{
+      font-family: $fontTitre;
+      font-size: 70px;
+      color: #ffffff;
+      margin: 0;
+    }
+    p{
+      font-family: $fontTexte;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(56,56,56,.3);
+  }
+}
+
+
+.section-country{
+  padding: 50px 125px;
+  h2{
+    font-family: $fontTitre;
+    font-size: 50px;
+    text-align: center;
+  }
+  p{
+    font-family: $fontTexte;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .map-txt{
+    display: flex;
+    .map{
+      width: 50%;
+      img{
+        max-width: 100%;
+      }
+    }
+    .txt{
+      width: 50%;
+      ul{
+        columns: 2;
+        li{
+          margin-bottom: 15px;
+          color: rgba(0,0,0,.8);
+          a{
+            color: rgba(0,0,0,.8);
+          }
+        }
+      }
+    }
+  }
+}
